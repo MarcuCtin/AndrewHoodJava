@@ -1,10 +1,10 @@
 # AndrewHood v1.1
 
-This is a project for my Programming, Algorithms and Data Structures (PAOO) class at the university. 
+This project is a part of my Design of Object-Oriented Applications (PAOO) course, undertaken during the second year of my Bachelor's degree studies. 
 
 ## Project Overview
 
-The project is a game developed in Java. It features various game states such as PLAYING, MENU, PAUSE, OPTIONS, QUIT, COMPLETED, and SETTINGS. The game includes different levels, each with its own set of enemies and coins. The player's progress and current level are saved and loaded from a database.
+The project is an RPG Platformer game developed in Java. It features various game states such as PLAYING, MENU, PAUSE, OPTIONS, QUIT, COMPLETED, and SETTINGS. The game includes different levels, each with its own set of enemies and coins. The player's progress and current level are saved and loaded from a database.
 
 ## Key Features
 
