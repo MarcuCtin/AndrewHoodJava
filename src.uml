@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>F:/facultate/PAOO joc/AndrewHood/src</OriginalElement>
+  <nodes>
+    <node x="831.0" y="-163.0">Game.entities.Enemy</node>
+    <node x="1111.0" y="4304.0">Game.Database.PlayerData</node>
+    <node x="354.5" y="4247.0">Game.utils.HelpMethods</node>
+    <node x="872.0" y="2105.0">Game.UI.GameOverOverlay</node>
+    <node x="389.5" y="-407.5">Game.entities.Entity</node>
+    <node x="44.0" y="3960.0">Game.utils.constants.UI</node>
+    <node x="2233.5" y="2700.0">Game.Main.GameWindow</node>
+    <node x="389.5" y="1747.5">Game.entities.Player</node>
+    <node x="-88.0" y="4840.0">Game.UI.ResumeBtn</node>
+    <node x="1144.0" y="1990.0">Game.UI.Pause</node>
+    <node x="2227.0" y="2105.0">Game.inputs.KeyboardInputs</node>
+    <node x="998.0" y="4828.0">Game.Main.Main</node>
+    <node x="1997.0" y="3121.0">Game.Main.GamePanel</node>
+    <node x="803.0" y="4840.0">Game.UI.MainMenuBtn</node>
+    <node x="1742.0" y="800.5">Game.UI.MenuButton</node>
+    <node x="1775.0" y="56.5">Game.gamestates.Gamestate</node>
+    <node x="1404.0" y="1338.5">Game.UI.LevelCompleted</node>
+    <node x="1046.0" y="754.5">Game.UI.PauseMenuOptionBtn</node>
+    <node x="973.5" y="3763.0">Game.Main.Game</node>
+    <node x="-16.5" y="1954.5">Game.Levels.LevelManager</node>
+    <node x="1564.0" y="456.5">Game.gamestates.StateMethods</node>
+    <node x="1990.5" y="1419.0">Game.inputs.MouseInputs</node>
+    <node x="-207.0" y="4396.5">Game.utils.LoadSave</node>
+    <node x="862.5" y="479.0">Game.entities.Ghoul</node>
+    <node x="900.5" y="4740.0">Game.UI.ResetLevelBtn</node>
+    <node x="256.5" y="3960.0">Game.utils.constants.Directions</node>
+    <node x="1724.0" y="1978.5">Game.gamestates.Menu</node>
+    <node x="-222.0" y="3180.0">Game.utils.constants</node>
+    <node x="631.0" y="1395.5">Game.entities.EnemyManager</node>
+    <node x="26.0" y="4740.0">Game.utils.constants.UI.Buttons</node>
+    <node x="864.0" y="2787.5">Game.gamestates.Playing</node>
+    <node x="183.0" y="1360.5">Game.UI.PauseBtn</node>
+    <node x="101.5" y="4408.0">Game.utils.constants.PlayerConstants</node>
+    <node x="689.0" y="3925.0">Game.utils.constants.EnemyConstants</node>
+    <node x="833.5" y="4361.5">Game.Database.DatabaseHandler</node>
+    <node x="540.5" y="881.0">Game.gamestates.State</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Game.UI.Pause" target="Game.gamestates.StateMethods" relationship="REALIZATION">
+      <point x="103.5" y="-177.0" />
+      <point x="1385.5" y="1287.0" />
+      <point x="1702.0" y="1287.0" />
+      <point x="0.0" y="130.5" />
+    </edge>
+    <edge source="Game.UI.LevelCompleted" target="Game.UI.PauseMenuOptionBtn" relationship="CREATE">
+      <point x="34.5" y="-188.5" />
+      <point x="1576.5" y="1307.0" />
+      <point x="1382.0" y="1307.0" />
+      <point x="1382.0" y="1207.0" />
+      <point x="1372.6666666666667" y="1207.0" />
+      <point x="130.66666666666669" y="212.5" />
+    </edge>
+    <edge source="Game.Main.Game" target="Game.gamestates.Playing" relationship="CREATE">
+      <point x="72.33333333333334" y="-224.0" />
+      <point x="1154.3333333333333" y="3727.0" />
+      <point x="1702.0" y="3727.0" />
+      <point x="1702.0" y="3687.0" />
+      <point x="1071.0" y="3687.0" />
+      <point x="69.0" y="419.5" />
+    </edge>
+    <edge source="Game.Main.Game" target="Game.UI.LevelCompleted" relationship="CREATE">
+      <point x="72.33333333333334" y="-224.0" />
+      <point x="1154.3333333333333" y="3727.0" />
+      <point x="1702.0" y="3727.0" />
+      <point x="1702.0" y="3147.0" />
+      <point x="1634.0" y="3147.0" />
+      <point x="92.0" y="188.5" />
+    </edge>
+    <edge source="Game.Main.GamePanel" target="Game.inputs.MouseInputs" relationship="CREATE">
+      <point x="83.33333333333334" y="-86.0" />
+      <point x="2205.3333333333335" y="3087.0" />
+      <point x="2202.0" y="3087.0" />
+      <point x="2202.0" y="2687.0" />
+      <point x="2209.6666666666665" y="2687.0" />
+      <point x="87.66666666666666" y="108.0" />
+    </edge>
+    <edge source="Game.gamestates.Menu" target="Game.gamestates.State" relationship="GENERALIZATION">
+      <point x="-103.5" y="-188.5" />
+      <point x="1758.5" y="1267.0" />
+      <point x="1182.0" y="1267.0" />
+      <point x="1182.0" y="1207.0" />
+      <point x="872.75" y="1207.0" />
+      <point x="110.75" y="86.0" />
+    </edge>
+    <edge source="Game.gamestates.Menu" target="Game.UI.MenuButton" relationship="TO_MANY">
+      <point x="103.5" y="-188.5" />
+      <point x="1965.5" y="1947.0" />
+      <point x="1952.0" y="1947.0" />
+      <point x="70.0" y="166.5" />
+    </edge>
+    <edge source="Game.Main.Game" target="Game.UI.Pause" relationship="TO_ONE">
+      <point x="0.0" y="-224.0" />
+      <point x="1082.0" y="3667.0" />
+      <point x="1182.0" y="3667.0" />
+      <point x="1182.0" y="2367.0" />
+      <point x="1190.0" y="2367.0" />
+      <point x="-92.0" y="177.0" />
+    </edge>
+    <edge source="Game.Main.Game" target="Game.Main.GameWindow" relationship="TO_ONE">
+      <point x="0.0" y="-224.0" />
+      <point x="1082.0" y="3667.0" />
+      <point x="2287.75" y="3667.0" />
+      <point x="-54.25" y="27.0" />
+    </edge>
+    <edge source="Game.gamestates.Playing" target="Game.Levels.LevelManager" relationship="TO_ONE">
+      <point x="0.0" y="-419.5" />
+      <point x="1002.0" y="2747.0" />
+      <point x="762.0" y="2747.0" />
+      <point x="762.0" y="2647.0" />
+      <point x="181.0" y="2647.0" />
+      <point x="79.0" y="212.5" />
+    </edge>
+    <edge source="Game.Levels.LevelManager" target="Game.Main.Game" relationship="TO_ONE">
+      <point x="-79.0" y="212.5" />
+      <point x="23.0" y="3187.0" />
+      <point x="62.0" y="3187.0" />
+      <point x="62.0" y="3647.0" />
+      <point x="842.0" y="3647.0" />
+      <point x="842.0" y="3727.0" />
+      <point x="1009.6666666666667" y="3727.0" />
+      <point x="-72.33333333333334" y="-224.0" />
+    </edge>
+    <edge source="Game.gamestates.Playing" target="Game.UI.GameOverOverlay" relationship="TO_ONE">
+      <point x="0.0" y="-419.5" />
+      <point x="1002.0" y="2747.0" />
+      <point x="762.0" y="2747.0" />
+      <point x="762.0" y="2647.0" />
+      <point x="982.0" y="2647.0" />
+      <point x="0.0" y="62.0" />
+    </edge>
+    <edge source="Game.UI.GameOverOverlay" target="Game.gamestates.Playing" relationship="TO_ONE">
+      <point x="73.33333333333334" y="62.0" />
+      <point x="1055.3333333333333" y="2627.0" />
+      <point x="1062.0" y="2627.0" />
+      <point x="1062.0" y="2767.0" />
+      <point x="1057.2" y="2767.0" />
+      <point x="55.19999999999999" y="-419.5" />
+    </edge>
+    <edge source="Game.utils.constants.EnemyConstants" target="Game.utils.constants" relationship="INNER_CLASS">
+      <point x="0.0" y="-62.0" />
+      <point x="802.0" y="3887.0" />
+      <point x="-118.0" y="3887.0" />
+      <point x="-118.0" y="3267.0" />
+      <point x="-158.0" y="3267.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="Game.entities.Ghoul" target="Game.entities.Enemy" relationship="GENERALIZATION">
+      <point x="0.0" y="-108.0" />
+      <point x="0.0" y="270.0" />
+    </edge>
+    <edge source="Game.Main.Game" target="Game.gamestates.Menu" relationship="CREATE">
+      <point x="72.33333333333334" y="-224.0" />
+      <point x="1154.3333333333333" y="3727.0" />
+      <point x="1702.0" y="3727.0" />
+      <point x="1702.0" y="3687.0" />
+      <point x="1922.0" y="3687.0" />
+      <point x="1922.0" y="3187.0" />
+      <point x="1931.0" y="3187.0" />
+      <point x="69.0" y="188.5" />
+    </edge>
+    <edge source="Game.UI.Pause" target="Game.gamestates.State" relationship="GENERALIZATION">
+      <point x="-103.5" y="-177.0" />
+      <point x="1178.5" y="1267.0" />
+      <point x="1182.0" y="1267.0" />
+      <point x="1182.0" y="1207.0" />
+      <point x="872.75" y="1207.0" />
+      <point x="110.75" y="86.0" />
+    </edge>
+    <edge source="Game.UI.Pause" target="Game.gamestates.Playing" relationship="TO_ONE">
+      <point x="0.0" y="177.0" />
+      <point x="1282.0" y="2627.0" />
+      <point x="1062.0" y="2627.0" />
+      <point x="1062.0" y="2767.0" />
+      <point x="1057.2" y="2767.0" />
+      <point x="55.19999999999999" y="-419.5" />
+    </edge>
+    <edge source="Game.gamestates.Playing" target="Game.UI.Pause" relationship="TO_ONE">
+      <point x="0.0" y="-419.5" />
+      <point x="1002.0" y="2747.0" />
+      <point x="762.0" y="2747.0" />
+      <point x="762.0" y="2667.0" />
+      <point x="1182.0" y="2667.0" />
+      <point x="1182.0" y="2367.0" />
+      <point x="1190.0" y="2367.0" />
+      <point x="-92.0" y="177.0" />
+    </edge>
+    <edge source="Game.gamestates.Playing" target="Game.gamestates.State" relationship="GENERALIZATION">
+      <point x="-110.39999999999998" y="-419.5" />
+      <point x="891.5999999999999" y="2707.0" />
+      <point x="-38.0" y="2707.0" />
+      <point x="-38.0" y="1267.0" />
+      <point x="1182.0" y="1267.0" />
+      <point x="1182.0" y="1207.0" />
+      <point x="872.75" y="1207.0" />
+      <point x="110.75" y="86.0" />
+    </edge>
+    <edge source="Game.gamestates.Menu" target="Game.gamestates.StateMethods" relationship="REALIZATION">
+      <point x="-34.5" y="-188.5" />
+      <point x="1827.5" y="1287.0" />
+      <point x="1702.0" y="1287.0" />
+      <point x="0.0" y="130.5" />
+    </edge>
+    <edge source="Game.entities.Player" target="Game.entities.Entity" relationship="GENERALIZATION">
+      <point x="0.0" y="-419.5" />
+      <point x="0.0" y="74.5" />
+    </edge>
+    <edge source="Game.gamestates.Playing" target="Game.entities.Player" relationship="CREATE">
+      <point x="-55.19999999999999" y="-419.5" />
+      <point x="946.8" y="2767.0" />
+      <point x="442.0" y="2767.0" />
+      <point x="442.0" y="2607.0" />
+      <point x="433.66666666666663" y="2607.0" />
+      <point x="-88.33333333333334" y="419.5" />
+    </edge>
+    <edge source="Game.gamestates.Playing" target="Game.entities.Player" relationship="TO_ONE">
+      <point x="0.0" y="-419.5" />
+      <point x="1002.0" y="2747.0" />
+      <point x="762.0" y="2747.0" />
+      <point x="762.0" y="2647.0" />
+      <point x="522.0" y="2647.0" />
+      <point x="0.0" y="419.5" />
+    </edge>
+    <edge source="Game.entities.Player" target="Game.gamestates.Playing" relationship="TO_ONE">
+      <point x="88.33333333333334" y="419.5" />
+      <point x="610.3333333333334" y="2627.0" />
+      <point x="1062.0" y="2627.0" />
+      <point x="1062.0" y="2767.0" />
+      <point x="1057.2" y="2767.0" />
+      <point x="55.19999999999999" y="-419.5" />
+    </edge>
+    <edge source="Game.UI.PauseBtn" target="Game.gamestates.Gamestate" relationship="TO_ONE">
+      <point x="0.0" y="-166.5" />
+      <point x="302.0" y="427.0" />
+      <point x="1882.0" y="427.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="Game.gamestates.Menu" target="Game.UI.MenuButton" relationship="CREATE">
+      <point x="34.5" y="-188.5" />
+      <point x="1896.5" y="1267.0" />
+      <point x="1812.0" y="1267.0" />
+      <point x="-70.0" y="166.5" />
+    </edge>
+    <edge source="Game.UI.LevelCompleted" target="Game.gamestates.Playing" relationship="TO_ONE">
+      <point x="-92.0" y="188.5" />
+      <point x="1450.0" y="2627.0" />
+      <point x="1062.0" y="2627.0" />
+      <point x="1062.0" y="2767.0" />
+      <point x="1057.2" y="2767.0" />
+      <point x="55.19999999999999" y="-419.5" />
+    </edge>
+    <edge source="Game.gamestates.Playing" target="Game.UI.LevelCompleted" relationship="TO_ONE">
+      <point x="0.0" y="-419.5" />
+      <point x="1002.0" y="2747.0" />
+      <point x="762.0" y="2747.0" />
+      <point x="762.0" y="2687.0" />
+      <point x="1542.0" y="2687.0" />
+      <point x="0.0" y="188.5" />
+    </edge>
+    <edge source="Game.gamestates.Playing" target="Game.UI.GameOverOverlay" relationship="CREATE">
+      <point x="-55.19999999999999" y="-419.5" />
+      <point x="946.8" y="2767.0" />
+      <point x="442.0" y="2767.0" />
+      <point x="442.0" y="2607.0" />
+      <point x="908.6666666666667" y="2607.0" />
+      <point x="-73.33333333333334" y="62.0" />
+    </edge>
+    <edge source="Game.Main.Game" target="Game.UI.LevelCompleted" relationship="TO_ONE">
+      <point x="0.0" y="-224.0" />
+      <point x="1082.0" y="3667.0" />
+      <point x="1542.0" y="3667.0" />
+      <point x="0.0" y="188.5" />
+    </edge>
+    <edge source="Game.gamestates.Playing" target="Game.entities.EnemyManager" relationship="TO_ONE">
+      <point x="0.0" y="-419.5" />
+      <point x="1002.0" y="2747.0" />
+      <point x="762.0" y="2747.0" />
+      <point x="0.0" y="131.5" />
+    </edge>
+    <edge source="Game.entities.EnemyManager" target="Game.gamestates.Playing" relationship="TO_ONE">
+      <point x="87.33333333333334" y="131.5" />
+      <point x="849.3333333333333" y="2627.0" />
+      <point x="1062.0" y="2627.0" />
+      <point x="1062.0" y="2767.0" />
+      <point x="1057.2" y="2767.0" />
+      <point x="55.19999999999999" y="-419.5" />
+    </edge>
+    <edge source="Game.utils.constants.UI.Buttons" target="Game.utils.constants.UI" relationship="INNER_CLASS">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="Game.entities.Enemy" target="Game.entities.Entity" relationship="GENERALIZATION">
+      <point x="0.0" y="-270.0" />
+      <point x="1002.0" y="-193.0" />
+      <point x="522.0" y="-193.0" />
+      <point x="0.0" y="74.5" />
+    </edge>
+    <edge source="Game.UI.PauseMenuOptionBtn" target="Game.gamestates.Gamestate" relationship="TO_ONE">
+      <point x="0.0" y="-212.5" />
+      <point x="1242.0" y="427.0" />
+      <point x="1882.0" y="427.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="Game.gamestates.Playing" target="Game.gamestates.StateMethods" relationship="REALIZATION">
+      <point x="110.4" y="-419.5" />
+      <point x="1112.4" y="2707.0" />
+      <point x="1702.0" y="2707.0" />
+      <point x="0.0" y="130.5" />
+    </edge>
+    <edge source="Game.gamestates.Playing" target="Game.UI.PauseBtn" relationship="TO_ONE">
+      <point x="0.0" y="-419.5" />
+      <point x="1002.0" y="2747.0" />
+      <point x="762.0" y="2747.0" />
+      <point x="762.0" y="2647.0" />
+      <point x="361.5" y="2647.0" />
+      <point x="59.5" y="166.5" />
+    </edge>
+    <edge source="Game.Main.Game" target="Game.UI.Pause" relationship="CREATE">
+      <point x="72.33333333333334" y="-224.0" />
+      <point x="1154.3333333333333" y="3727.0" />
+      <point x="1702.0" y="3727.0" />
+      <point x="1702.0" y="3687.0" />
+      <point x="1662.0" y="3687.0" />
+      <point x="1662.0" y="3187.0" />
+      <point x="1374.0" y="3187.0" />
+      <point x="92.0" y="177.0" />
+    </edge>
+    <edge source="Game.Main.Main" target="Game.Main.Game" relationship="CREATE">
+      <point x="0.0" y="-39.0" />
+      <point x="0.0" y="224.0" />
+    </edge>
+    <edge source="Game.Main.GamePanel" target="Game.inputs.KeyboardInputs" relationship="CREATE">
+      <point x="83.33333333333334" y="-86.0" />
+      <point x="2205.3333333333335" y="3087.0" />
+      <point x="2202.0" y="3087.0" />
+      <point x="2202.0" y="2687.0" />
+      <point x="2399.5" y="2687.0" />
+      <point x="57.5" y="62.0" />
+    </edge>
+    <edge source="Game.entities.EnemyManager" target="Game.entities.Ghoul" relationship="TO_MANY">
+      <point x="0.0" y="-131.5" />
+      <point x="762.0" y="1247.0" />
+      <point x="1002.0" y="1247.0" />
+      <point x="0.0" y="108.0" />
+    </edge>
+    <edge source="Game.inputs.MouseInputs" target="Game.Main.GamePanel" relationship="TO_ONE">
+      <point x="0.0" y="108.0" />
+      <point x="0.0" y="-86.0" />
+    </edge>
+    <edge source="Game.Main.GamePanel" target="Game.inputs.MouseInputs" relationship="TO_ONE">
+      <point x="-83.33333333333334" y="-86.0" />
+      <point x="2038.6666666666665" y="3087.0" />
+      <point x="2034.3333333333335" y="3087.0" />
+      <point x="-87.66666666666666" y="108.0" />
+    </edge>
+    <edge source="Game.Main.Game" target="Game.Main.GamePanel" relationship="TO_ONE">
+      <point x="0.0" y="-224.0" />
+      <point x="1082.0" y="3667.0" />
+      <point x="2122.0" y="3667.0" />
+      <point x="0.0" y="86.0" />
+    </edge>
+    <edge source="Game.inputs.KeyboardInputs" target="Game.Main.GamePanel" relationship="TO_ONE">
+      <point x="-57.5" y="62.0" />
+      <point x="2284.5" y="2667.0" />
+      <point x="2122.0" y="2667.0" />
+      <point x="0.0" y="-86.0" />
+    </edge>
+    <edge source="Game.Main.GamePanel" target="Game.Main.Game" relationship="TO_ONE">
+      <point x="-83.33333333333334" y="86.0" />
+      <point x="2038.6666666666665" y="3647.0" />
+      <point x="842.0" y="3647.0" />
+      <point x="842.0" y="3727.0" />
+      <point x="1009.6666666666667" y="3727.0" />
+      <point x="-72.33333333333334" y="-224.0" />
+    </edge>
+    <edge source="Game.utils.constants.Directions" target="Game.utils.constants" relationship="INNER_CLASS">
+      <point x="0.0" y="-27.0" />
+      <point x="322.0" y="3887.0" />
+      <point x="-118.0" y="3887.0" />
+      <point x="-118.0" y="3267.0" />
+      <point x="-158.0" y="3267.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="Game.UI.Pause" target="Game.UI.PauseMenuOptionBtn" relationship="TO_MANY">
+      <point x="-34.5" y="-177.0" />
+      <point x="1247.5" y="1227.0" />
+      <point x="1242.0" y="1227.0" />
+      <point x="0.0" y="212.5" />
+    </edge>
+    <edge source="Game.utils.constants.PlayerConstants" target="Game.utils.constants" relationship="INNER_CLASS">
+      <point x="0.0" y="-39.0" />
+      <point x="202.0" y="3887.0" />
+      <point x="-118.0" y="3887.0" />
+      <point x="-118.0" y="3267.0" />
+      <point x="-158.0" y="3267.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="Game.utils.constants.UI" target="Game.utils.constants" relationship="INNER_CLASS">
+      <point x="0.0" y="-27.0" />
+      <point x="82.0" y="3887.0" />
+      <point x="-118.0" y="3887.0" />
+      <point x="-118.0" y="3267.0" />
+      <point x="-158.0" y="3267.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="Game.UI.LevelCompleted" target="Game.gamestates.StateMethods" relationship="REALIZATION">
+      <point x="103.5" y="-188.5" />
+      <point x="1645.5" y="1287.0" />
+      <point x="1702.0" y="1287.0" />
+      <point x="0.0" y="130.5" />
+    </edge>
+    <edge source="Game.UI.PauseMenuOptionBtn" target="Game.gamestates.Playing" relationship="TO_ONE">
+      <point x="-130.66666666666669" y="212.5" />
+      <point x="1111.3333333333333" y="1247.0" />
+      <point x="1122.0" y="1247.0" />
+      <point x="1122.0" y="2627.0" />
+      <point x="1062.0" y="2627.0" />
+      <point x="1062.0" y="2767.0" />
+      <point x="1057.2" y="2767.0" />
+      <point x="55.19999999999999" y="-419.5" />
+    </edge>
+    <edge source="Game.UI.LevelCompleted" target="Game.gamestates.State" relationship="GENERALIZATION">
+      <point x="-103.5" y="-188.5" />
+      <point x="1438.5" y="1267.0" />
+      <point x="1182.0" y="1267.0" />
+      <point x="1182.0" y="1207.0" />
+      <point x="872.75" y="1207.0" />
+      <point x="110.75" y="86.0" />
+    </edge>
+    <edge source="Game.gamestates.Playing" target="Game.entities.EnemyManager" relationship="CREATE">
+      <point x="-55.19999999999999" y="-419.5" />
+      <point x="946.8" y="2767.0" />
+      <point x="442.0" y="2767.0" />
+      <point x="442.0" y="2607.0" />
+      <point x="674.6666666666666" y="2607.0" />
+      <point x="-87.33333333333334" y="131.5" />
+    </edge>
+    <edge source="Game.gamestates.State" target="Game.Main.Game" relationship="TO_ONE">
+      <point x="-110.75" y="86.0" />
+      <point x="651.25" y="1087.0" />
+      <point x="-78.0" y="1087.0" />
+      <point x="-78.0" y="3647.0" />
+      <point x="842.0" y="3647.0" />
+      <point x="842.0" y="3727.0" />
+      <point x="1009.6666666666667" y="3727.0" />
+      <point x="-72.33333333333334" y="-224.0" />
+    </edge>
+    <edge source="Game.gamestates.Playing" target="Game.UI.PauseBtn" relationship="CREATE">
+      <point x="-55.19999999999999" y="-419.5" />
+      <point x="946.8" y="2767.0" />
+      <point x="442.0" y="2767.0" />
+      <point x="442.0" y="2607.0" />
+      <point x="242.5" y="2607.0" />
+      <point x="-59.5" y="166.5" />
+    </edge>
+    <edge source="Game.Main.Game" target="Game.gamestates.Playing" relationship="TO_ONE">
+      <point x="0.0" y="-224.0" />
+      <point x="1082.0" y="3667.0" />
+      <point x="933.0" y="3667.0" />
+      <point x="-69.0" y="419.5" />
+    </edge>
+    <edge source="Game.Main.Game" target="Game.Main.GamePanel" relationship="CREATE">
+      <point x="72.33333333333334" y="-224.0" />
+      <point x="1154.3333333333333" y="3727.0" />
+      <point x="1702.0" y="3727.0" />
+      <point x="1702.0" y="3687.0" />
+      <point x="2205.3333333333335" y="3687.0" />
+      <point x="83.33333333333334" y="86.0" />
+    </edge>
+    <edge source="Game.UI.LevelCompleted" target="Game.UI.PauseMenuOptionBtn" relationship="TO_ONE">
+      <point x="-34.5" y="-188.5" />
+      <point x="1507.5" y="1227.0" />
+      <point x="1242.0" y="1227.0" />
+      <point x="0.0" y="212.5" />
+    </edge>
+    <edge source="Game.gamestates.Playing" target="Game.Levels.LevelManager" relationship="CREATE">
+      <point x="-55.19999999999999" y="-419.5" />
+      <point x="946.8" y="2767.0" />
+      <point x="442.0" y="2767.0" />
+      <point x="442.0" y="2607.0" />
+      <point x="102.0" y="2607.0" />
+      <point x="0.0" y="212.5" />
+    </edge>
+    <edge source="Game.Main.Game" target="Game.gamestates.Menu" relationship="TO_ONE">
+      <point x="0.0" y="-224.0" />
+      <point x="1082.0" y="3667.0" />
+      <point x="1622.0" y="3667.0" />
+      <point x="1622.0" y="3167.0" />
+      <point x="1793.0" y="3167.0" />
+      <point x="-69.0" y="188.5" />
+    </edge>
+    <edge source="Game.Main.Game" target="Game.Main.GameWindow" relationship="CREATE">
+      <point x="72.33333333333334" y="-224.0" />
+      <point x="1154.3333333333333" y="3727.0" />
+      <point x="1702.0" y="3727.0" />
+      <point x="1702.0" y="3687.0" />
+      <point x="2396.25" y="3687.0" />
+      <point x="54.25" y="27.0" />
+    </edge>
+    <edge source="Game.UI.MenuButton" target="Game.gamestates.Gamestate" relationship="TO_ONE">
+      <point x="0.0" y="-166.5" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="Game.UI.Pause" target="Game.UI.PauseMenuOptionBtn" relationship="CREATE">
+      <point x="34.5" y="-177.0" />
+      <point x="1316.5" y="1307.0" />
+      <point x="1382.0" y="1307.0" />
+      <point x="1382.0" y="1207.0" />
+      <point x="1372.6666666666667" y="1207.0" />
+      <point x="130.66666666666669" y="212.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.47027603629448184" showDependencies="true" x="840.7528353413652" y="878.6455518072287" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
